@@ -1,0 +1,17 @@
+
+  <div class="loginBox">
+    <h3>Sign in </h3>
+    <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+    
+    <form>
+        <div class="inputBox">
+            <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" id="uname" name="useremail" placeholder="useremail">
+            <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="pass" name="Password" placeholder="Password">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+    </form>
+    <a href="#">Forget Password<br></a>
+    <div class="text-center">
+        <button type="button" class="btn btn-link" (click)="navigateToRegister()" style="color: #59238F;">Sign-Up</button>
+    </div>
+</div>
